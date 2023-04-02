@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icons -->
+  <link rel="stylesheet" href="assets/icons.css">
+  <!-- theme style -->
+  <link rel="stylesheet" href="assets/theme.css">
+  <title>Back End Developer</title>
+</head>
+
+<body>
+  <!-- Seaction top Page {Header && Main} -->
+  <section class="bg-gray-50 relative mb-9">
+    <div class="container mx-auto px-9 max-lg:px-5">
+      <!-- Header  -->
+      <header class="flex py-4 border-b border-gray-200 border-solid ">
+        <!-- Logo -->
+        <div class="header-logo mr-12 max-md:mr-6">
+          <img class="h-11 w-12 block max-w-none" src="/dist/assets/img/logo.png" alt="logo">
+        </div>
+        <!-- Menu -->
+        <nav class="header-nav grow">
+          <span id="Open-menu" class="hidden max-lg:block" >
+            <svg class="text-5xl text-gray-400" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path></svg>
+          </span>
+          <ul class="links flex gap-6 
+          max-lg:absolute max-lg:w-full transition-all max-lg:h-screen  max-lg:py-16 max-lg:px-5 max-lg:-left-full max-lg:top-0 max-lg:bg-white max-lg:flex-col max-lg:opacity-0 max-lg:invisible z-50">
+            <span id="close" class=" relative left-full -top-8 -translate-x-6 hidden max-md:block">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" stroke-width="2" d="M3,3 L21,21 M3,21 L21,3"></path></svg>
+            </span>
+            <li class="link rounded-md text-lg bg-slate-100 active">
+              <a class="px-3 py-2 block" href="#Dashboard">Dashboard</a>
+            </li>
+            <li class="link rounded-md text-lg hover:bg-slate-100">
+              <a class="px-3 py-2 block" href="#Jobs">Jobs</a>
+            </li>
+            <li class="link rounded-md text-lg hover:bg-slate-100">
+              <a class="px-3 py-2 block" href="#Applicants">Applicants</a>
+            </li>
+            <li class="link rounded-md text-lg hover:bg-slate-100">
+              <a class="px-3 py-2 block" href="#Company">Company</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Info right Header -->
+        <div class="header-right flex">
+          <div class="search  ">
+            <span id="Open-Search" class="icon-HiSearch pt-0.5 pr-4 text-gray-400 text-3xl hidden max-md:block"></span>
+            <div id="search-mobile" class=" transition-all max-md:absolute max-md:p-5 max-md:left-0 max-md:top-16 max-md:shadow-md max-md:shadow-slate-400 max-md:opacity-0 max-md:invisible	 bg-white max-md:w-full">
+              <div class="search relative ">
+                <span class="icon-HiSearch absolute left-4 text-gray-400 top-2 text-2xl"></span>
+                <input placeholder="Search" type="text" name="search"
+                class="rounded pl-12 text-gray-400 text-lg h-11 w-96 max-xl:w-56  max-md:w-full mr-9 border border-gray-300 border-solid bg-white outline-purple-200" />
+              </div>
+            </div>
+          </div>
+          <div class="notice pt-1 mr-5">
+            <a href="#">
+              <span class="icon-notifications-outline text-2xl text-gray-400"></span>
+            </a>
+          </div>
+          <div class="profile">
+            <a href="#">
+              <img class="rounded-full  h-11 w-11 block max-w-none" src="/dist/assets/img/avatar.png" alt="avatar">
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
+      <!-- Main -->
+      <main class="pt-10 pb-10  ">
+        <!-- Beadcraumbs -->
+        <div class="breadcrumbs mb-0.5">
+          <ul class="breadcrumbs-wrappers flex gap-6 items-center">
+            <li class="text-gray-500">
+              <a href="#" class="text-lg">Jobs</a>
+            </li>
+            <li><span class="icon-HiChevronRight text-gray-500 text-2xl"></span></li>
+            <li class="text-lg text-gray-500">Engineering</li>
+          </ul>
+        </div>
+        <!-- End Beadcraumbs -->
+        <!-- Main Content -->
+        <div class="flex justify-between items-start flex-wrap max-xl:flex-wrap">
+          <div class="max-xl:w-full max-xl:mb-5">
+            <h1 class="text-4xl font-bold mb-2">Back End Developer</h1>
+            <ul class="options flex gap-x-10 gap-y-2 max-lg:flex-wrap max-lg:mb-5">
+              <li class="flex items-center text-gray-400 text-lg max-lg:w-1/3 max-md:w-full">
+                <span class="icon-HiBriefcase text-2xl pr-2"></span>
+                Full-time
+              </li>
+              <li class="flex items-center text-gray-400 text-lg max-lg:w-1/3 max-md:w-full">
+                <span class="icon-TbMapPinFilled text-2xl pr-2"></span>
+                Remote
+              </li>
+              <li class="flex items-center text-gray-400 text-lg max-lg:w-1/3 max-md:w-full">
+                <span class="icon-HiCurrencyDollar text-2xl pr-2"></span>
+                $120k - $140k
+              </li>
+              <li class="flex items-center text-gray-400 text-lg max-lg:w-1/2 max-md:w-full">
+                <span class="icon-BsFillCalendar2Fill text-xl pr-2"></span>
+                Closing on January 9, 2020
+              </li>
+            </ul>
+          </div>
+          <div class="flex gap-4 items-center max-xl:w-full max-md:flex-wrap">
+            <a href="#"
+              class="flex items-center rounded-md px-4 py-1 text-gray-500 bg-white border border-solid border-gray-300 text-lg font-medium hover:border-purple-400 hover:text-purple-600"><span
+                class="icon-MdModeEditOutline pr-3 text-2xl"></span> Edit</a>
+            <a href="#"
+              class="flex items-center rounded-md px-4 py-1 text-gray-500 bg-white border border-solid border-gray-300 text-lg font-medium hover:border-purple-400 hover:text-purple-600"><span
+                class="icon-HiOutlineLink pr-3 text-2xl"></span> View</a>
+            <a href="#"
+              class="flex items-center bg-purple-600 rounded-md  px-3 text-white text-lg font-normal hover:opacity-80">
+              <p class="flex items-center">
+                <span class="icon-HiCheck  text-2xl"></span>
+                <span class="py-1 px-4">Published</span>
+                <span class="py-1 pl-3 border-stone-600 border-l ">
+                  <span class="icon-HiChevronDown text-2xl"></span>
+                </span>
+              </p>
+            </a>
+          </div>
+        </div>
+         <!-- End Main Content -->
+      </main>
+    </div>
+  </section>
+  <!-- End Seaction top Page {Header && Main} -->
+  <!-- Seaction Candidates -->
+  <section class="candidates">
+    <!-- container -->
+    <div class="container mx-auto px-9 max-lg:px-5">
+      <h2 class="text-2xl mb-7">Candidates</h2>
+      <!-- Tabd -->
+      <div class="tabs max-md:overflow-auto">
+        <ul class="flex border-b border-gray-400 border-solid gap-x-8">
+          <li class="text-lg px-2 pb-4 cursor-pointer text-gray-500 flex items-center whitespace-nowrap	
+                    hover:border-b hover:border-purple-600 hover:border-solid hover:text-purple-600">
+            Applied
+            <span class="text-sm font-semibold py-1 px-3 bg-purple-50 rounded-xl ml-2">2</span>
+          </li>
+          <li class="text-lg px-2 pb-4 cursor-pointer text-gray-500 flex items-center whitespace-nowrap	
+                    hover:border-b hover:border-purple-600 hover:border-solid hover:text-purple-600">
+            Phone Screening
+            <span class="text-sm font-semibold py-1 px-3 bg-purple-50 rounded-xl ml-3">4</span>
+          </li>
+          <li class="text-lg px-2 pb-4 cursor-pointer flex items-center whitespace-nowrap	
+                    border-b border-purple-600 border-solid text-purple-600">
+            Interview
+            <span class="text-sm font-semibold py-1 px-3 bg-purple-50 text-purple-600 rounded-xl ml-2">6</span>
+          </li>
+          <li class="text-lg px-2 pb-4 cursor-pointer text-gray-500 flex items-center whitespace-nowrap	
+                    hover:border-b hover:border-purple-600 hover:border-solid hover:text-purple-600">
+            Offer
+          </li>
+          <li class="text-lg px-2 pb-4 cursor-pointer text-gray-500  flex items-center whitespace-nowrap	
+                    hover:border-b hover:border-purple-600 hover:border-solid hover:text-purple-600">
+            Disqualified
+          </li>
+        </ul>
+      </div>
+      <!-- CandidatesInfo -->
+      <div class="candidate-info">
+        <div
+          class="candidate-item flex items-center max-md:flex-wrap pt-7 pb-6 border-b border-gray-400 hover:bg-gray-50 relative hover:px-9 hover:scale-105 transition-all hover:shadow-slate-200 hover:shadow-lg cursor-pointer ">
+            <div class="flex items-center w-1/2 max-md:w-full max-md:flex-wrap mb-4">
+              <div class="avatar max-md:w-full">
+                <img class="w-14 h-14 mr-6 max-w-none block" src="/dist/assets/img/avatar.png" alt="">
+              </div>
+              <div>
+                <p class="Name text-lg font-medium text-purple-600 mb-1">Emily Selman</p>
+                <a class="flex items-center text-lg text-gray-400" href="mailto:emiltselman@example.com">
+                  <span class="icon-HiMail text-2xl mr-2"></span>
+                  emiltselman@example.com
+                </a>
+              </div>
+            </div>
+            <div class="w-1/2 pl-7 max-md:w-full max-md:pl-0">
+              <p class="text-lg text-gray-600 font-medium">Applied on January 7, 2020</p>
+              <p class="flex items-center text-lg text-gray-400 ">
+                <span class="icon-HiCheckCircle text-2xl text-green-400 mr-2"></span>
+                Completed phone Screening
+              </p>
+            </div>
+            <div class="absolute right-1 top-1/2 transform -translate-y-1/2">
+              <span class="icon-HiChevronRight text-2xl text-gray-400"></span>
+            </div>
+        </div>
+        <div
+          class="candidate-item flex items-center max-md:flex-wrap pt-7 pb-6 border-b border-gray-400 hover:bg-gray-50 relative hover:px-9 hover:scale-105 transition-all hover:shadow-slate-200 hover:shadow-lg cursor-pointer ">
+            <div class="flex items-center w-1/2 max-md:w-full max-md:flex-wrap mb-4">
+              <div class="avatar max-md:w-full">
+                <img class="w-14 h-14 mr-6 max-w-none block" src="/dist/assets/img/avatar.png" alt="">
+              </div>
+              <div>
+                <p class="Name text-lg font-medium text-purple-600 mb-1">Emily Selman</p>
+                <a class="flex items-center text-lg text-gray-400" href="mailto:emiltselman@example.com">
+                  <span class="icon-HiMail text-2xl mr-2"></span>
+                  emiltselman@example.com
+                </a>
+              </div>
+            </div>
+            <div class="w-1/2 pl-7 max-md:w-full max-md:pl-0">
+              <p class="text-lg text-gray-600 font-medium">Applied on January 7, 2020</p>
+              <p class="flex items-center text-lg text-gray-400 ">
+                <span class="icon-HiCheckCircle text-2xl text-green-400 mr-2"></span>
+                Completed phone Screening
+              </p>
+            </div>
+            <div class="absolute right-1 top-1/2 transform -translate-y-1/2">
+              <span class="icon-HiChevronRight text-2xl text-gray-400"></span>
+            </div>
+        </div>
+        <div
+          class="candidate-item flex items-center max-md:flex-wrap pt-7 pb-6 border-b border-gray-400 hover:bg-gray-50 relative hover:px-9 hover:scale-105 transition-all hover:shadow-slate-200 hover:shadow-lg cursor-pointer ">
+            <div class="flex items-center w-1/2 max-md:w-full max-md:flex-wrap mb-4">
+              <div class="avatar max-md:w-full">
+                <img class="w-14 h-14 mr-6 max-w-none block" src="/dist/assets/img/avatar.png" alt="">
+              </div>
+              <div>
+                <p class="Name text-lg font-medium text-purple-600 mb-1">Emily Selman</p>
+                <a class="flex items-center text-lg text-gray-400" href="mailto:emiltselman@example.com">
+                  <span class="icon-HiMail text-2xl mr-2"></span>
+                  emiltselman@example.com
+                </a>
+              </div>
+            </div>
+            <div class="w-1/2 pl-7 max-md:w-full max-md:pl-0">
+              <p class="text-lg text-gray-600 font-medium">Applied on January 7, 2020</p>
+              <p class="flex items-center text-lg text-gray-400 ">
+                <span class="icon-HiCheckCircle text-2xl text-green-400 mr-2"></span>
+                Completed phone Screening
+              </p>
+            </div>
+            <div class="absolute right-1 top-1/2 transform -translate-y-1/2">
+              <span class="icon-HiChevronRight text-2xl text-gray-400"></span>
+            </div>
+        </div>
+        <div
+          class="candidate-item flex items-center max-md:flex-wrap pt-7 pb-6 border-b border-gray-400 hover:bg-gray-50 relative hover:px-9 hover:scale-105 transition-all hover:shadow-slate-200 hover:shadow-lg cursor-pointer ">
+            <div class="flex items-center w-1/2 max-md:w-full max-md:flex-wrap mb-4">
+              <div class="avatar max-md:w-full">
+                <img class="w-14 h-14 mr-6 max-w-none block" src="/dist/assets/img/avatar.png" alt="">
+              </div>
+              <div>
+                <p class="Name text-lg font-medium text-purple-600 mb-1">Emily Selman</p>
+                <a class="flex items-center text-lg text-gray-400" href="mailto:emiltselman@example.com">
+                  <span class="icon-HiMail text-2xl mr-2"></span>
+                  emiltselman@example.com
+                </a>
+              </div>
+            </div>
+            <div class="w-1/2 pl-7 max-md:w-full max-md:pl-0">
+              <p class="text-lg text-gray-600 font-medium">Applied on January 7, 2020</p>
+              <p class="flex items-center text-lg text-gray-400 ">
+                <span class="icon-HiCheckCircle text-2xl text-green-400 mr-2"></span>
+                Completed phone Screening
+              </p>
+            </div>
+            <div class="absolute right-1 top-1/2 transform -translate-y-1/2">
+              <span class="icon-HiChevronRight text-2xl text-gray-400"></span>
+            </div>
+        </div>
+        <div
+          class="candidate-item flex items-center max-md:flex-wrap pt-7 pb-6 border-b border-gray-400 hover:bg-gray-50 relative hover:px-9 hover:scale-105 transition-all hover:shadow-slate-200 hover:shadow-lg cursor-pointer ">
+            <div class="flex items-center w-1/2 max-md:w-full max-md:flex-wrap mb-4">
+              <div class="avatar max-md:w-full">
+                <img class="w-14 h-14 mr-6 max-w-none block" src="/dist/assets/img/avatar.png" alt="">
+              </div>
+              <div>
+                <p class="Name text-lg font-medium text-purple-600 mb-1">Emily Selman</p>
+                <a class="flex items-center text-lg text-gray-400" href="mailto:emiltselman@example.com">
+                  <span class="icon-HiMail text-2xl mr-2"></span>
+                  emiltselman@example.com
+                </a>
+              </div>
+            </div>
+            <div class="w-1/2 pl-7 max-md:w-full max-md:pl-0">
+              <p class="text-lg text-gray-600 font-medium">Applied on January 7, 2020</p>
+              <p class="flex items-center text-lg text-gray-400 ">
+                <span class="icon-HiCheckCircle text-2xl text-green-400 mr-2"></span>
+                Completed phone Screening
+              </p>
+            </div>
+            <div class="absolute right-1 top-1/2 transform -translate-y-1/2">
+              <span class="icon-HiChevronRight text-2xl text-gray-400"></span>
+            </div>
+        </div>
+        <div
+          class="candidate-item flex items-center max-md:flex-wrap pt-7 pb-6 border-b border-gray-400 hover:bg-gray-50 relative hover:px-9 hover:scale-105 transition-all hover:shadow-slate-200 hover:shadow-lg cursor-pointer ">
+            <div class="flex items-center w-1/2 max-md:w-full max-md:flex-wrap mb-4">
+              <div class="avatar max-md:w-full">
+                <img class="w-14 h-14 mr-6 max-w-none block" src="/dist/assets/img/avatar.png" alt="">
+              </div>
+              <div>
+                <p class="Name text-lg font-medium text-purple-600 mb-1">Emily Selman</p>
+                <a class="flex items-center text-lg text-gray-400" href="mailto:emiltselman@example.com">
+                  <span class="icon-HiMail text-2xl mr-2"></span>
+                  emiltselman@example.com
+                </a>
+              </div>
+            </div>
+            <div class="w-1/2 pl-7 max-md:w-full max-md:pl-0">
+              <p class="text-lg text-gray-600 font-medium">Applied on January 7, 2020</p>
+              <p class="flex items-center text-lg text-gray-400 ">
+                <span class="icon-HiCheckCircle text-2xl text-green-400 mr-2"></span>
+                Completed phone Screening
+              </p>
+            </div>
+            <div class="absolute right-1 top-1/2 transform -translate-y-1/2">
+              <span class="icon-HiChevronRight text-2xl text-gray-400"></span>
+            </div>
+        </div>
+        <div
+          class="candidate-item flex items-center max-md:flex-wrap pt-7 pb-6 border-b border-gray-400 hover:bg-gray-50 relative hover:px-9 hover:scale-105 transition-all hover:shadow-slate-200 hover:shadow-lg cursor-pointer ">
+            <div class="flex items-center w-1/2 max-md:w-full max-md:flex-wrap mb-4">
+              <div class="avatar max-md:w-full">
+                <img class="w-14 h-14 mr-6 max-w-none block" src="/dist/assets/img/avatar.png" alt="">
+              </div>
+              <div>
+                <p class="Name text-lg font-medium text-purple-600 mb-1">Emily Selman</p>
+                <a class="flex items-center text-lg text-gray-400" href="mailto:emiltselman@example.com">
+                  <span class="icon-HiMail text-2xl mr-2"></span>
+                  emiltselman@example.com
+                </a>
+              </div>
+            </div>
+            <div class="w-1/2 pl-7 max-md:w-full max-md:pl-0">
+              <p class="text-lg text-gray-600 font-medium">Applied on January 7, 2020</p>
+              <p class="flex items-center text-lg text-gray-400 ">
+                <span class="icon-HiCheckCircle text-2xl text-green-400 mr-2"></span>
+                Completed phone Screening
+              </p>
+            </div>
+            <div class="absolute right-1 top-1/2 transform -translate-y-1/2">
+              <span class="icon-HiChevronRight text-2xl text-gray-400"></span>
+            </div>
+        </div>
+        <div
+          class="candidate-item flex items-center max-md:flex-wrap pt-7 pb-6 border-b border-gray-400 hover:bg-gray-50 relative hover:px-9 hover:scale-105 transition-all hover:shadow-slate-200 hover:shadow-lg cursor-pointer ">
+            <div class="flex items-center w-1/2 max-md:w-full max-md:flex-wrap mb-4">
+              <div class="avatar max-md:w-full">
+                <img class="w-14 h-14 mr-6 max-w-none block" src="/dist/assets/img/avatar.png" alt="">
+              </div>
+              <div>
+                <p class="Name text-lg font-medium text-purple-600 mb-1">Emily Selman</p>
+                <a class="flex items-center text-lg text-gray-400" href="mailto:emiltselman@example.com">
+                  <span class="icon-HiMail text-2xl mr-2"></span>
+                  emiltselman@example.com
+                </a>
+              </div>
+            </div>
+            <div class="w-1/2 pl-7 max-md:w-full max-md:pl-0">
+              <p class="text-lg text-gray-600 font-medium">Applied on January 7, 2020</p>
+              <p class="flex items-center text-lg text-gray-400 ">
+                <span class="icon-HiCheckCircle text-2xl text-green-400 mr-2"></span>
+                Completed phone Screening
+              </p>
+            </div>
+            <div class="absolute right-1 top-1/2 transform -translate-y-1/2">
+              <span class="icon-HiChevronRight text-2xl text-gray-400"></span>
+            </div>
+        </div>
+        <div
+          class="candidate-item flex items-center max-md:flex-wrap pt-7 pb-6 border-b border-gray-400 hover:bg-gray-50 relative hover:px-9 hover:scale-105 transition-all hover:shadow-slate-200 hover:shadow-lg cursor-pointer ">
+            <div class="flex items-center w-1/2 max-md:w-full max-md:flex-wrap mb-4">
+              <div class="avatar max-md:w-full">
+                <img class="w-14 h-14 mr-6 max-w-none block" src="/dist/assets/img/avatar.png" alt="">
+              </div>
+              <div>
+                <p class="Name text-lg font-medium text-purple-600 mb-1">Emily Selman</p>
+                <a class="flex items-center text-lg text-gray-400" href="mailto:emiltselman@example.com">
+                  <span class="icon-HiMail text-2xl mr-2"></span>
+                  emiltselman@example.com
+                </a>
+              </div>
+            </div>
+            <div class="w-1/2 pl-7 max-md:w-full max-md:pl-0">
+              <p class="text-lg text-gray-600 font-medium">Applied on January 7, 2020</p>
+              <p class="flex items-center text-lg text-gray-400 ">
+                <span class="icon-HiCheckCircle text-2xl text-green-400 mr-2"></span>
+                Completed phone Screening
+              </p>
+            </div>
+            <div class="absolute right-1 top-1/2 transform -translate-y-1/2">
+              <span class="icon-HiChevronRight text-2xl text-gray-400"></span>
+            </div>
+        </div>
+        <div
+          class="candidate-item flex items-center max-md:flex-wrap pt-7 pb-6 border-b border-gray-400 hover:bg-gray-50 relative hover:px-9 hover:scale-105 transition-all hover:shadow-slate-200 hover:shadow-lg cursor-pointer ">
+            <div class="flex items-center w-1/2 max-md:w-full max-md:flex-wrap mb-4">
+              <div class="avatar max-md:w-full">
+                <img class="w-14 h-14 mr-6 max-w-none block" src="/dist/assets/img/avatar.png" alt="">
+              </div>
+              <div>
+                <p class="Name text-lg font-medium text-purple-600 mb-1">Emily Selman</p>
+                <a class="flex items-center text-lg text-gray-400" href="mailto:emiltselman@example.com">
+                  <span class="icon-HiMail text-2xl mr-2"></span>
+                  emiltselman@example.com
+                </a>
+              </div>
+            </div>
+            <div class="w-1/2 pl-7 max-md:w-full max-md:pl-0">
+              <p class="text-lg text-gray-600 font-medium">Applied on January 7, 2020</p>
+              <p class="flex items-center text-lg text-gray-400 ">
+                <span class="icon-HiCheckCircle text-2xl text-green-400 mr-2"></span>
+                Completed phone Screening
+              </p>
+            </div>
+            <div class="absolute right-1 top-1/2 transform -translate-y-1/2">
+              <span class="icon-HiChevronRight text-2xl text-gray-400"></span>
+            </div>
+        </div>
+
+      </div>
+      <!-- Pagination -->
+      <div class="pagination flex justify-between mb-10 ">
+        <div class="prev text-gray-400 pt-3  hover:text-purple-500">
+          <a href="#" class="flex items-center">
+            <span class="icon-HiArrowNarrowLeft text-2xl mr-3"></span>
+            <span class="max-md:hidden">Previous</span> 
+          </a>
+        </div>
+        <div class="pages ">
+          <ul class="flex mr-16 max-lg:mr-0">
+            <li class="text-gray-400 font-bold hover:border-t hover:border-purple-500 hover:border-solid">
+              <a class="pt-4 px-5 max-md:px-2 block" href="#">1</a>
+            </li>
+            <li class="pt-4 px-5 max-md:px-2 text-purple-500 font-bold border-t border-purple-500 border-solid">2</li>
+            <li class="text-gray-400 font-bold hover:border-t hover:border-purple-500 hover:border-solid">
+              <a class="pt-4 px-5 max-md:px-2 block" href="#">3</a>
+            </li>
+            <li class="text-gray-400 font-bold hover:border-t hover:border-purple-500 hover:border-solid">
+              <a class="pt-4 px-5 max-md:px-2 block" href="#">4</a>
+            </li>
+            <li class="text-gray-400 font-bold hover:border-t hover:border-purple-500 hover:border-solid">
+              <a class="pt-4 px-5 max-md:px-2 block" href="#">5</a>
+            </li>
+            <li class="text-gray-400 font-bold hover:border-t hover:border-purple-500 hover:border-solid">
+              <a class="pt-4 px-5 max-md:px-2 block" href="#">6</a>
+            </li>
+          </ul>
+        </div>
+        <div class="next text-gray-400 pt-3 flex items-center hover:text-purple-500">
+          <a href="#" class="flex items-center">
+            <span class="max-md:hidden">Next</span> 
+            <span class="icon-HiArrowNarrowRight text-2xl ml-3"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End container -->
+  </section>
+  <!-- End Seaction Candidates -->
+   <!-- Tailwind -->
+   <script src="assets/index.js"></script>
+   <!-- theme scripts -->
+  <script src="assets/theme.js"></script>
+</body>
+
+</html>
